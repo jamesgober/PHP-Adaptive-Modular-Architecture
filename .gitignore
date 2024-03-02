@@ -1,18 +1,52 @@
-*/config/development
-*/logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!system/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
+#
+#
+#
 
-user_guide_src/build/*
-user_guide_src/cilexer/build/*
-user_guide_src/cilexer/dist/*
-user_guide_src/cilexer/pycilexer.egg-info/*
+# CONFIG
+#===================================================
+*.env
+!example.env
 
-#codeigniter 3
-application/logs/*
-!application/logs/index.html
-!application/logs/.htaccess
-/vendor/
+#===================================================
+# PHP
+#===================================================
+php_errors.log
+.php-version
+
+# APPLE OS
+#===================================================
+*.DS_Store
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# MICROSOFT WINDOWS
+#===================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# LINUX
+#===================================================
+*~
+.directory
+.Trash-*
+
+# PHP UNIT
+#===================================================
+phpunit
+/.phpunit.cache
+/phpunit.xml
+.phpunit.result.cache
+
+# COMPOSER
+#===================================================
+/vendor
+composer.phar
+composer.lock
